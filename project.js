@@ -69,25 +69,41 @@ console.log(rover.direction);
 
 //moveforWard c'est une function faire changemment de la position vertical et horizontal.
 
-function moveForWard(rover) {
-  // console.log(rover.direction);
-  if(rover.direction === "N"){
-      rover.y = rover.y+1
-  }
- else if(rover.direction ==="E"){
-     rover.x = rover.x+1
- }
- else if (rover.direction ==="S"){
-     rover.y = rover.y+1
- }
- else if (rover.direction === "W"){
-     rover.x = rover.x+1
- }
- console.log(rover.x);
- console.log(rover.y);
+// function moveForWard(rover) {
+//   // console.log(rover.direction);
+//   if(rover.direction === "N"){
+//       rover.y = rover.y+1
+//   }
+//  else if(rover.direction ==="E"){
+//      rover.x = rover.x+1
+//  }
+//  else if (rover.direction ==="S"){
+//      rover.y = rover.y+1
+//  }
+//  else if (rover.direction === "W"){
+//      rover.x = rover.x+1
+//  }
+//  console.log(rover.x);
+//  console.log(rover.y);
 
+// }
+// console.log(moveForWard());
+
+function moveForWard(rover){
+  if(rover.direction === "N"){
+    rover.y = rover.y +1;
+  }else if(rover.direction === "E"){
+    rover.x = rover.x +1;
+  }else if(rover.direction === "S"){
+    rover.x = rover.x +1;
+  }else if(rover.direction === "W"){
+    rover.x = rover.y +1;
+  }console.log(moveForWard());
 }
-console.log(moveForWard());
+console.log(`${rover.x} / ${rover.y}`);
+console.log(`${rover.x} / ${rover.y}`);
+console.log(`${rover.x} / ${rover.y}`);
+console.log(`${rover.x} / ${rover.y}`);
 
 
 
